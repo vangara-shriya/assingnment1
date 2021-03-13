@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="STUDENT INFORMATION" max_length="40" name="x_594732_sru_student_information" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element label="Contact" max_length="40" name="contact" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CIVIL" value="civil"/>
+                <element inactive_on_update="false" label="CSE" value="cse"/>
+                <element inactive_on_update="false" label="ECE" value="ece"/>
+                <element inactive_on_update="false" label="EEE" value="eee"/>
+                <element inactive_on_update="false" label="MECH" value="mech"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="DOB" max_length="40" name="dob" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="E-mail" max_length="40" name="e_mail" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Roll.no" max_length="40" name="roll_no" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Student name" max_length="40" name="student_name" type="string"/>
+    </element>
+</database>
